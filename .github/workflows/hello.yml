@@ -14,4 +14,11 @@ jobs:
       - name: say username
         run: echo "$USER"
 
+  details:
+     runs-on: ubuntu-latest
+
+     steps:
+       - name: check verion of docker and python
+         run: docker --version && python --version
+
  

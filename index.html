@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parul College</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* Navbar */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:#020617;
+position:sticky;
+top:0;
+}
+
+nav h1{
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-size:18px;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* Hero */
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+}
+
+.hero h2{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#38bdf8;
+padding:12px 25px;
+border:none;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+}
+
+.btn:hover{
+background:#0284c7;
+}
+
+/* About */
+
+.about{
+padding:80px 10%;
+text-align:center;
+}
+
+.about h2{
+margin-bottom:20px;
+font-size:36px;
+color:#38bdf8;
+}
+
+/* Courses */
+
+.courses{
+padding:80px 10%;
+}
+
+.course-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#334155;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+/* Contact */
+
+.contact{
+padding:80px 10%;
+text-align:center;
+}
+
+.contact input,
+.contact textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:none;
+border-radius:6px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav>
+<h1>TechSphere</h1>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+<h2>Welcome to TechSphere College</h2>
+<p>Learn Technology, Build Future 🚀</p>
+<button class="btn">Explore Courses</button>
+</section>
+
+<!-- About -->
+
+<section class="about" id="about">
+<h2>About Us</h2>
+<p>
+TechSphere College is dedicated to providing modern technical education.
+We focus on practical learning in fields like Cybersecurity, AI, and Web Development.
+</p>
+</section>
+
+<!-- Courses -->
+
+<section class="courses" id="courses">
+<h2 style="text-align:center;color:#38bdf8;margin-bottom:40px;">Our Courses</h2>
+
+<div class="course-container">
+
+<div class="card">
+<h3>Cyber Security</h3>
+<p>Learn ethical hacking, penetration testing and network security.</p>
+</div>
+
+<div class="card">
+<h3>Web Development</h3>
+<p>Build modern websites using HTML, CSS, JavaScript and frameworks.</p>
+</div>
+
+<div class="card">
+<h3>Artificial Intelligence</h3>
+<p>Understand machine learning, AI models and automation.</p>
+</div>
+
+<div class="card">
+<h3>Cloud Computing</h3>
+<p>Learn AWS, Docker, Kubernetes and DevOps tools.</p>
+</div>
+
+</div>
+</section>
+
+<!-- Contact -->
+
+<section class="contact" id="contact">
+<h2 style="color:#38bdf8;">Contact Us</h2>
+
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Message"></textarea>
+<button class="btn">Send Message</button>
+</form>
+
+</section>
+
+<footer>
+<p>© 2026 TechSphere College | Built by Students</p>
+</footer>
+
+</body>
+</html>
